@@ -1,3 +1,5 @@
+package packs
+
 import compose.icons.AllIcons
 import compose.icons.Octicons
 import compose.icons.octicons.Octoface24

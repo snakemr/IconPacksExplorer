@@ -1,3 +1,5 @@
+package packs
+
 import compose.icons.AllIcons
 import compose.icons.LineAwesomeIcons
 import compose.icons.lineawesomeicons.FontAwesomeFlag

@@ -1,3 +1,5 @@
+package packs
+
 import compose.icons.AllIcons
 import compose.icons.CssGgIcons
 import compose.icons.cssggicons.Bot

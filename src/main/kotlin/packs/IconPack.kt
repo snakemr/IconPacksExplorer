@@ -1,3 +1,5 @@
+package packs
+
 import androidx.compose.ui.graphics.vector.ImageVector
 import kotlin.enums.EnumEntries
 

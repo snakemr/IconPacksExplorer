@@ -25,11 +25,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import packs.*
 import java.awt.Toolkit
 import java.awt.datatransfer.StringSelection
 
 val packs = setOf(
-    Default, Simple, Feather, Tabler, Eva, FontAwesome, Octicons, Linea, LineAwesome, Weather, CssGg, Extended
+    Core, Simple, Feather, Tabler, Eva, FontAwesome, Octicons, Linea, LineAwesome, Weather, CssGg, Extended
 )
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterialApi::class)
@@ -69,7 +70,7 @@ fun App() {
                     subPacks.forEach { (name, size) ->
                         ListItem(Modifier.clickable {
                             menu1 = false
-                            search = name + "." + search.substringAfter(".")
+                            search = name + "." + search.substringAfterLast(".")
                         }) {
                             Text("$name ($size)")
                         }

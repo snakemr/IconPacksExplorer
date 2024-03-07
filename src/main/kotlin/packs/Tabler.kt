@@ -1,3 +1,5 @@
+package packs
+
 import compose.icons.AllIcons
 import compose.icons.TablerIcons
 import compose.icons.tablericons.BrandTabler

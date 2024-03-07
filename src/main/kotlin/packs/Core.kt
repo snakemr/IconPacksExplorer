@@ -1,20 +1,71 @@
+package packs
+
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.*
+import androidx.compose.material.icons.automirrored.outlined.*
+import androidx.compose.material.icons.automirrored.rounded.*
+import androidx.compose.material.icons.automirrored.sharp.*
+import androidx.compose.material.icons.automirrored.twotone.*
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.material.icons.rounded.*
 import androidx.compose.material.icons.sharp.*
 import androidx.compose.material.icons.twotone.*
 
-class Default {
+class Core {
     companion object : IconPack {
+        private val filledMirrored = listOf(
+            Icons.AutoMirrored.Filled.ArrowBack,
+            Icons.AutoMirrored.Filled.ArrowForward,
+            Icons.AutoMirrored.Filled.ExitToApp,
+            Icons.AutoMirrored.Filled.KeyboardArrowLeft,
+            Icons.AutoMirrored.Filled.KeyboardArrowRight,
+            Icons.AutoMirrored.Filled.List,
+            Icons.AutoMirrored.Filled.Send
+        )
+        private val outlinedMirrored = listOf(
+            Icons.AutoMirrored.Outlined.ArrowBack,
+            Icons.AutoMirrored.Outlined.ArrowForward,
+            Icons.AutoMirrored.Outlined.ExitToApp,
+            Icons.AutoMirrored.Outlined.KeyboardArrowLeft,
+            Icons.AutoMirrored.Outlined.KeyboardArrowRight,
+            Icons.AutoMirrored.Outlined.List,
+            Icons.AutoMirrored.Outlined.Send
+        )
+        private val roundedMirrored = listOf(
+            Icons.AutoMirrored.Rounded.ArrowBack,
+            Icons.AutoMirrored.Rounded.ArrowForward,
+            Icons.AutoMirrored.Rounded.ExitToApp,
+            Icons.AutoMirrored.Rounded.KeyboardArrowLeft,
+            Icons.AutoMirrored.Rounded.KeyboardArrowRight,
+            Icons.AutoMirrored.Rounded.List,
+            Icons.AutoMirrored.Rounded.Send
+        )
+        private val sharpMirrored = listOf(
+            Icons.AutoMirrored.Sharp.ArrowBack,
+            Icons.AutoMirrored.Sharp.ArrowForward,
+            Icons.AutoMirrored.Sharp.ExitToApp,
+            Icons.AutoMirrored.Sharp.KeyboardArrowLeft,
+            Icons.AutoMirrored.Sharp.KeyboardArrowRight,
+            Icons.AutoMirrored.Sharp.List,
+            Icons.AutoMirrored.Sharp.Send
+        )
+        private val twoToneMirrored = listOf(
+            Icons.AutoMirrored.TwoTone.ArrowBack,
+            Icons.AutoMirrored.TwoTone.ArrowForward,
+            Icons.AutoMirrored.TwoTone.ExitToApp,
+            Icons.AutoMirrored.TwoTone.KeyboardArrowLeft,
+            Icons.AutoMirrored.TwoTone.KeyboardArrowRight,
+            Icons.AutoMirrored.TwoTone.List,
+            Icons.AutoMirrored.TwoTone.Send
+        )
+
         private val filled = listOf(
             Icons.Filled.AccountBox,
             Icons.Filled.AccountCircle,
             Icons.Filled.AddCircle,
             Icons.Filled.Add,
-            Icons.Filled.ArrowBack,
             Icons.Filled.ArrowDropDown,
-            Icons.Filled.ArrowForward,
             Icons.Filled.Build,
             Icons.Filled.Call,
             Icons.Filled.CheckCircle,
@@ -27,17 +78,13 @@ class Default {
             Icons.Filled.Done,
             Icons.Filled.Edit,
             Icons.Filled.Email,
-            Icons.Filled.ExitToApp,
             Icons.Filled.Face,
             Icons.Filled.FavoriteBorder,
             Icons.Filled.Favorite,
             Icons.Filled.Home,
             Icons.Filled.Info,
             Icons.Filled.KeyboardArrowDown,
-            Icons.Filled.KeyboardArrowLeft,
-            Icons.Filled.KeyboardArrowRight,
             Icons.Filled.KeyboardArrowUp,
-            Icons.Filled.List,
             Icons.Filled.LocationOn,
             Icons.Filled.Lock,
             Icons.Filled.MailOutline,
@@ -50,7 +97,6 @@ class Default {
             Icons.Filled.PlayArrow,
             Icons.Filled.Refresh,
             Icons.Filled.Search,
-            Icons.Filled.Send,
             Icons.Filled.Settings,
             Icons.Filled.Share,
             Icons.Filled.ShoppingCart,
@@ -63,9 +109,7 @@ class Default {
             Icons.Outlined.AccountCircle,
             Icons.Outlined.AddCircle,
             Icons.Outlined.Add,
-            Icons.Outlined.ArrowBack,
             Icons.Outlined.ArrowDropDown,
-            Icons.Outlined.ArrowForward,
             Icons.Outlined.Build,
             Icons.Outlined.Call,
             Icons.Outlined.CheckCircle,
@@ -78,17 +122,13 @@ class Default {
             Icons.Outlined.Done,
             Icons.Outlined.Edit,
             Icons.Outlined.Email,
-            Icons.Outlined.ExitToApp,
             Icons.Outlined.Face,
             Icons.Outlined.FavoriteBorder,
             Icons.Outlined.Favorite,
             Icons.Outlined.Home,
             Icons.Outlined.Info,
             Icons.Outlined.KeyboardArrowDown,
-            Icons.Outlined.KeyboardArrowLeft,
-            Icons.Outlined.KeyboardArrowRight,
             Icons.Outlined.KeyboardArrowUp,
-            Icons.Outlined.List,
             Icons.Outlined.LocationOn,
             Icons.Outlined.Lock,
             Icons.Outlined.MailOutline,
@@ -101,7 +141,6 @@ class Default {
             Icons.Outlined.PlayArrow,
             Icons.Outlined.Refresh,
             Icons.Outlined.Search,
-            Icons.Outlined.Send,
             Icons.Outlined.Settings,
             Icons.Outlined.Share,
             Icons.Outlined.ShoppingCart,
@@ -114,9 +153,7 @@ class Default {
             Icons.Rounded.AccountCircle,
             Icons.Rounded.AddCircle,
             Icons.Rounded.Add,
-            Icons.Rounded.ArrowBack,
             Icons.Rounded.ArrowDropDown,
-            Icons.Rounded.ArrowForward,
             Icons.Rounded.Build,
             Icons.Rounded.Call,
             Icons.Rounded.CheckCircle,
@@ -129,17 +166,13 @@ class Default {
             Icons.Rounded.Done,
             Icons.Rounded.Edit,
             Icons.Rounded.Email,
-            Icons.Rounded.ExitToApp,
             Icons.Rounded.Face,
             Icons.Rounded.FavoriteBorder,
             Icons.Rounded.Favorite,
             Icons.Rounded.Home,
             Icons.Rounded.Info,
             Icons.Rounded.KeyboardArrowDown,
-            Icons.Rounded.KeyboardArrowLeft,
-            Icons.Rounded.KeyboardArrowRight,
             Icons.Rounded.KeyboardArrowUp,
-            Icons.Rounded.List,
             Icons.Rounded.LocationOn,
             Icons.Rounded.Lock,
             Icons.Rounded.MailOutline,
@@ -152,7 +185,6 @@ class Default {
             Icons.Rounded.PlayArrow,
             Icons.Rounded.Refresh,
             Icons.Rounded.Search,
-            Icons.Rounded.Send,
             Icons.Rounded.Settings,
             Icons.Rounded.Share,
             Icons.Rounded.ShoppingCart,
@@ -165,9 +197,7 @@ class Default {
             Icons.Sharp.AccountCircle,
             Icons.Sharp.AddCircle,
             Icons.Sharp.Add,
-            Icons.Sharp.ArrowBack,
             Icons.Sharp.ArrowDropDown,
-            Icons.Sharp.ArrowForward,
             Icons.Sharp.Build,
             Icons.Sharp.Call,
             Icons.Sharp.CheckCircle,
@@ -180,17 +210,13 @@ class Default {
             Icons.Sharp.Done,
             Icons.Sharp.Edit,
             Icons.Sharp.Email,
-            Icons.Sharp.ExitToApp,
             Icons.Sharp.Face,
             Icons.Sharp.FavoriteBorder,
             Icons.Sharp.Favorite,
             Icons.Sharp.Home,
             Icons.Sharp.Info,
             Icons.Sharp.KeyboardArrowDown,
-            Icons.Sharp.KeyboardArrowLeft,
-            Icons.Sharp.KeyboardArrowRight,
             Icons.Sharp.KeyboardArrowUp,
-            Icons.Sharp.List,
             Icons.Sharp.LocationOn,
             Icons.Sharp.Lock,
             Icons.Sharp.MailOutline,
@@ -203,7 +229,6 @@ class Default {
             Icons.Sharp.PlayArrow,
             Icons.Sharp.Refresh,
             Icons.Sharp.Search,
-            Icons.Sharp.Send,
             Icons.Sharp.Settings,
             Icons.Sharp.Share,
             Icons.Sharp.ShoppingCart,
@@ -216,9 +241,7 @@ class Default {
             Icons.TwoTone.AccountCircle,
             Icons.TwoTone.AddCircle,
             Icons.TwoTone.Add,
-            Icons.TwoTone.ArrowBack,
             Icons.TwoTone.ArrowDropDown,
-            Icons.TwoTone.ArrowForward,
             Icons.TwoTone.Build,
             Icons.TwoTone.Call,
             Icons.TwoTone.CheckCircle,
@@ -231,17 +254,13 @@ class Default {
             Icons.TwoTone.Done,
             Icons.TwoTone.Edit,
             Icons.TwoTone.Email,
-            Icons.TwoTone.ExitToApp,
             Icons.TwoTone.Face,
             Icons.TwoTone.FavoriteBorder,
             Icons.TwoTone.Favorite,
             Icons.TwoTone.Home,
             Icons.TwoTone.Info,
             Icons.TwoTone.KeyboardArrowDown,
-            Icons.TwoTone.KeyboardArrowLeft,
-            Icons.TwoTone.KeyboardArrowRight,
             Icons.TwoTone.KeyboardArrowUp,
-            Icons.TwoTone.List,
             Icons.TwoTone.LocationOn,
             Icons.TwoTone.Lock,
             Icons.TwoTone.MailOutline,
@@ -254,7 +273,6 @@ class Default {
             Icons.TwoTone.PlayArrow,
             Icons.TwoTone.Refresh,
             Icons.TwoTone.Search,
-            Icons.TwoTone.Send,
             Icons.TwoTone.Settings,
             Icons.TwoTone.Share,
             Icons.TwoTone.ShoppingCart,
@@ -264,26 +282,55 @@ class Default {
         )
 
         override val name: String = Icons::class.simpleName!!
+
+        private val filledMirroredPack = Packs.AutoMirrored.name + "." + Packs.Filled.name + "." to AutoMirrored.entries
+        private val outlinedMirroredPack = Packs.AutoMirrored.name + "." + Packs.Outlined.name + "." to AutoMirrored.entries
+        private val roundedMirroredPack = Packs.AutoMirrored.name + "." + Packs.Rounded.name + "." to AutoMirrored.entries
+        private val sharpMirroredPack = Packs.AutoMirrored.name + "." + Packs.Sharp.name + "." to AutoMirrored.entries
+        private val twoToneMirroredPack = Packs.AutoMirrored.name + "." + Packs.TwoTone.name + "." to AutoMirrored.entries
+
         private val filledPack = Packs.Filled.name + "." to All.entries
         private val outlinedPack = Packs.Outlined.name + "." to All.entries
         private val roundedPack = Packs.Rounded.name + "." to All.entries
         private val sharpPack = Packs.Sharp.name + "." to All.entries
         private val twoTonePack = Packs.TwoTone.name + "." to All.entries
-        override val packs = mapOf(filledPack, outlinedPack, roundedPack, sharpPack, twoTonePack)
-        override val icons = filled + outlined + rounded + sharp + twoTone
+
+        override val packs = mapOf(
+            filledMirroredPack, filledPack,
+            outlinedMirroredPack, outlinedPack,
+            roundedMirroredPack, roundedPack,
+            sharpMirroredPack, sharpPack,
+            twoToneMirroredPack, twoTonePack
+        )
+
+        override val icons =
+            filledMirrored + filled +
+            outlinedMirrored + outlined +
+            roundedMirrored + rounded +
+            sharpMirrored + sharp +
+            twoToneMirrored + twoTone
+
         override val icon = Icons.Default.Face
     }
 
-    enum class Packs { Filled, Outlined, Rounded, Sharp, TwoTone }
+    enum class Packs { Filled, Outlined, Rounded, Sharp, TwoTone, AutoMirrored }
+
+    enum class AutoMirrored {
+        ArrowBack,
+        ArrowForward,
+        ExitToApp,
+        KeyboardArrowLeft,
+        KeyboardArrowRight,
+        List,
+        Send
+    }
 
     enum class All {
         AccountBox,
         AccountCircle,
         AddCircle,
         Add,
-        ArrowBack,
         ArrowDropDown,
-        ArrowForward,
         Build,
         Call,
         CheckCircle,
@@ -296,17 +343,13 @@ class Default {
         Done,
         Edit,
         Email,
-        ExitToApp,
         Face,
         FavoriteBorder,
         Favorite,
         Home,
         Info,
         KeyboardArrowDown,
-        KeyboardArrowLeft,
-        KeyboardArrowRight,
         KeyboardArrowUp,
-        List,
         LocationOn,
         Lock,
         MailOutline,
@@ -319,7 +362,6 @@ class Default {
         PlayArrow,
         Refresh,
         Search,
-        Send,
         Settings,
         Share,
         ShoppingCart,
